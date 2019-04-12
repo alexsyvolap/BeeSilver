@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Загальна інформація (Дохід)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="../assets/js/uikit.min.js"></script>
+    <script src="../assets/js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-text-middle">
+
+<div class="uk-container uk-container-large">
+
+    <nav class="uk-navbar-container uk-margin uk-text-large">
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav navbar-ul">
+                <li class="uk-active"><a href="index.html" class="navbar-a">Пасіка</a></li>
+                <li><a href="allInfoExpense.html" class="navbar-a">Загальна інформація</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="uk-card uk-card-default ">
+        <div class="uk-card-body uk-text-large">
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-text-center border-primary-div border-width-div">
+                    <a href="allInfoIncome.html" class="uk-button uk-button-primary button-primary border-primary-div">Дохід</a>
+                    <a href="allInfoExpense.html" class="uk-button uk-text-emphasis">Витрати</a>
+                </div>
+            </div>
+            <div class="uk-text-center">
+                <span class="uk-text-big-large uk-text-bold uk-text-emphasis">Загальна отримана сума з усіх пасік: <br>174 430 грн.</span>
+            </div>
+            <div class="form uk-flex uk-flex-center">
+                <form method="GET" action="" class="uk-form-large uk-form-width-large">
+                    <fieldset class="uk-fieldset">
+
+                        <div class="uk-margin uk-flex uk-flex-right">
+                            <label for="date"></label>
+                            <input class="uk-input border-primary-div uk-text-emphasis" id="date" name="date" type="text"
+                                   value="01.06.2018 - 30.06.2018">
+                            <button type="submit" class="uk-float-right search-margin uk-position-absolute uk-text-emphasis"
+                                    uk-icon="search"></button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="form uk-flex uk-flex-center">
+                <div class="filtration-buttons">
+                    <a href="" class="uk-button uk-button-default button-shadow">За рік</a>
+                    <a href="" class="uk-button uk-button-default button-shadow">За місяць</a>
+                    <a href="" class="uk-button uk-button-default button-shadow">За сьогодні</a>
+                    <!--                        <a href="" class="uk-button uk-button-secondary">За рік</a>-->
+                    <!--                        <a href="" class="uk-button uk-button-secondary">За місяць</a>-->
+                    <!--                        <a href="" class="uk-button uk-button-secondary">За сьогодні</a>-->
+                </div>
+            </div>
+
+            <br>
+
+            <div class="content uk-grid-small uk-child-width-1-3@s" uk-grid>
+                <div class="uk-text-center uk-text-emphasis">
+                    <span class="uk-text-bold">Мед</span> <br>
+                    456 кг. <br>
+                    145 920 грн.
+                    <hr>
+                </div>
+                <div class="uk-text-center uk-text-emphasis">
+                    <span class="uk-text-bold">Воск</span> <br>
+                    46 кг. <br>
+                    8 510 грн.
+                    <hr>
+                </div>
+                <div class="uk-text-center uk-text-emphasis">
+                    <span class="uk-text-bold">Пилок</span> <br>
+                    80 кг. <br>
+                    20 000 грн.
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

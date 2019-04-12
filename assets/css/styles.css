@@ -1,0 +1,82 @@
+.uk-navbar-container {
+    background: #2b2b2b !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+a.navbar-a {
+    color: #ffffff !important;
+}
+.navbar-ul {
+    margin-left: 20px;
+}
+a.text-decoration {
+    text-decoration: underline;
+    color: #000;
+}
+.uk-button {
+    border-radius: 5px !important;
+}
+.bordered-button-primary {
+    border-radius: 20px !important;
+    border-color: #0e58e5;
+    color: #0e58e5;
+}
+.bordered-button-primary:hover {
+    border-color: #39f;
+    color: #39f;
+}
+.button-primary {
+    background: #0e58e5;
+}
+.button-plus {
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: #3bc021;
+    border-radius: 50%;
+    box-shadow: 5px 4px 10px rgba(0,0,0,0.5);
+}
+.button-plus:hover {
+    box-shadow: 5px 4px 15px rgba(0,0,0,0.5);
+}
+.plus {
+    color: #ffffff;
+    padding: 35%;
+}
+html {
+    background-color: #ffb700;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1329' height='1329' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.77'%3E%3Cpolygon fill='%23cccccc' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23cccccc' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+}
+.uk-card-default {
+    box-shadow: 3px 4px 5px rgba(0,0,0,0.5);
+    border-radius: 5px !important;
+}
+.button-shadow {
+    box-shadow: 3px 4px 5px rgba(0,0,0,0.5);
+}
+.uk-text-large {
+    font-size: 20px !important;
+}
+.uk-button-success {
+    background-color: #3bc021;
+}
+.uk-button-success:hover {
+    background-color: #34a81e;
+}
+.border-primary-div {
+    border-radius: 20px !important;
+    border: 1px solid #0e58e5 !important;
+}
+.uk-text-big-large {
+    font-size: 26px !important;
+}
+.search-margin {
+    padding-top: 8px !important;
+    padding-right: 20px !important;
+}
+.card-body-padding {
+    padding: 0;
+}
+.border-width-div {
+    width: 234px !important;
+}

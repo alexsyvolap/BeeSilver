@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редагування вулика [%numberHive%]</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="../../assets/js/uikit.min.js"></script>
+    <script src="../../assets/js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-text-middle">
+
+<div class="uk-container uk-container-large">
+
+    <nav class="uk-navbar-container uk-margin uk-text-large margin-bottom">
+        <div class="uk-navbar-left">
+
+            <img class="logo-image open-logo" src="../../assets/images/logo.png" id="logo" alt="Logo" >
+            <ul class="uk-navbar-nav navbar-ul">
+                <li><a href="../../index.html" class="navbar-a">Пасіка</a></li>
+                <li><a href="../../partials/allInfo/income.html" class="navbar-a">Загальна інформація</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <nav class="uk-navbar-container uk-align-center uk-margin uk-text-large apiary-nav margin-top">
+        <div class="uk-navbar-center">
+
+            <ul class="uk-navbar-nav navbar-ul uk-text-emphasis">
+                <li><a href="../index.html" class="uk-text-bold uk-text-emphasis">Вулики</a></li>
+                <li><a href="../info/income.html" class="uk-text-emphasis">Статистика</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="uk-grid-small uk-child-width-1-1@m" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-text-emphasis uk-card-header">
+                    <a href="../index.html" uk-icon="icon: arrow-left; ratio: 2"></a> |
+                    <span class="uk-text-bold uk-text-large">Редагування вулика [%numberHive%]</span>
+                </div>
+                <div class="uk-card-body">
+                    <form action="" method="POST" class="uk-text-uppercase">
+
+                        <fieldset class="uk-fieldset">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-large" for="number">Номер:</label>
+                                <input class="uk-input" id="number" name="number" type="number">
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-large" for="type">Тип:</label>
+                                <input class="uk-input" id="type" name="type" type="text">
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-large" for="scope">Рамки:</label>
+                                <input class="uk-input" id="scope" name="scope" type="text">
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-large" for="families">Сімей:</label>
+                                <input class="uk-input" id="families" name="families" type="text">
+                            </div>
+
+                            <button type="submit" class="uk-button uk-button-primary">Редагувати</button>
+
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

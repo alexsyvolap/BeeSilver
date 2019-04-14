@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[%nameApiary%]</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="../assets/js/uikit.min.js"></script>
+    <script src="../assets/js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-text-middle">
+
+<div class="uk-container uk-container-large">
+
+    <nav class="uk-navbar-container uk-margin uk-text-large margin-bottom">
+        <div class="uk-navbar-left">
+
+            <img class="logo-image open-logo" src="../assets/images/logo.png" id="logo" alt="Logo" >
+            <ul class="uk-navbar-nav navbar-ul">
+                <li><a href="../index.html" class="navbar-a">Пасіка</a></li>
+                <li><a href="../partials/allInfo/income.html" class="navbar-a">Загальна інформація</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <nav class="uk-navbar-container uk-align-center uk-margin uk-text-large apiary-nav margin-top">
+        <div class="uk-navbar-center">
+
+            <ul class="uk-navbar-nav navbar-ul uk-text-emphasis">
+                <li><a href="../index.html" class="uk-text-bold uk-text-emphasis">Вулики</a></li>
+                <li><a href="./info/income.html" class="uk-text-emphasis">Статистика</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="uk-container">
+        <form method="GET" action="" class="form-height-large">
+            <fieldset class="uk-fieldset">
+                <label for="filter" class="uk-text-emphasis text-decoration uk-text-uppercase">Найближчі задачі</label>
+                <input type="checkbox" id="filter" name="filter">
+                <label for="filter"></label>
+                <div class="uk-float-right">
+                    <a href="#" class="text-decoration uk-text-emphasis">Обробити всі</a>
+                    <a href="#" class="uk-button uk-button-small button-primary bordered-button-primary-full">
+                        <span>Обробити</span>
+                    </a>
+                    <a href="#" class="uk-button uk-button-small button-danger bordered-button-danger-full">
+                        <span>Обробити</span>
+                    </a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="uk-float-right uk-flex uk-position-fixed button-plus-position">
+        <a class="button-plus uk-text-large" href="./create/hive.html">
+            <i class="plus fa fa-plus"></i>
+        </a>
+    </div>
+
+    <div class="">
+
+        <div class="uk-grid-small uk-child-width-1-3@m" uk-grid>
+
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-header uk-text-center">
+                        <span class="uk-text-bold uk-text-large uk-text-emphasis">1</span>
+                    </div>
+                    <div class="uk-card-body uk-text-large uk-text-emphasis">
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Тип:</span> <span class="uk-float-right">Лежачий</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Рамки:</span> <span class="uk-float-right">20</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Сімей:</span> <span class="uk-float-right">1</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Задача:</span> <span class="uk-float-right">01.06.2019</span>
+                        </div>
+                    </div>
+                    <div class="uk-card-footer">
+                        <div class="buttons uk-float-right">
+                            <a href="./edit/hive.html" class="uk-button uk-button-default uk-button-small bordered-button-primary">
+                                <span class="uk-text-bold">Редагувати</span>
+                            </a>
+                            <a href="#" class="uk-button uk-button-primary uk-button-small button-primary">
+                                <span class="uk-text-bold">У вулик</span> <i uk-icon="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-header uk-text-center">
+                        <span class="uk-text-bold uk-text-large uk-text-emphasis">2</span>
+                    </div>
+                    <div class="uk-card-body uk-text-large uk-text-emphasis">
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Тип:</span> <span class="uk-float-right">Лежачий</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Рамки:</span> <span class="uk-float-right">10</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Сімей:</span> <span class="uk-float-right">1</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Задача:</span> <span class="uk-float-right">01.05.2019</span>
+                        </div>
+                    </div>
+                    <div class="uk-card-footer">
+                        <div class="buttons uk-float-right">
+                            <a href="./edit/hive.html" class="uk-button uk-button-default uk-button-small bordered-button-primary">
+                                <span class="uk-text-bold">Редагувати</span>
+                            </a>
+                            <a href="#" class="uk-button uk-button-primary uk-button-small button-danger">
+                                <span class="uk-text-bold">У вулик</span> <i uk-icon="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-header uk-text-center">
+                        <span class="uk-text-bold uk-text-large uk-text-emphasis">3</span>
+                    </div>
+                    <div class="uk-card-body uk-text-large uk-text-emphasis">
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Тип:</span> <span class="uk-float-right">Багатокорпусний</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Рамки:</span> <span class="uk-float-right">48</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Сімей:</span> <span class="uk-float-right">2</span>
+                        </div>
+                        <div class="uk-flex-row">
+                            <span class="uk-text-bold">Задача:</span> <span class="uk-float-right">01.06.2019</span>
+                        </div>
+                    </div>
+                    <div class="uk-card-footer">
+                        <div class="buttons uk-float-right">
+                            <a href="./edit/hive.html" class="uk-button uk-button-default uk-button-small bordered-button-primary">
+                                <span class="uk-text-bold">Редагувати</span>
+                            </a>
+                            <a href="#" class="uk-button uk-button-primary uk-button-small button-primary">
+                                <span class="uk-text-bold">У вулик</span> <i uk-icon="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Додавання доходу</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="../../assets/js/uikit.min.js"></script>
+    <script src="../../assets/js/uikit-icons.min.js"></script>
+</head>
+
+<body class="uk-text-middle">
+
+<div class="uk-container uk-container-large">
+
+    <nav class="uk-navbar-container uk-margin uk-text-large">
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav navbar-ul">
+                <li class="uk-active"><a href="../index.html" class="navbar-a">Пасіка</a></li>
+                <li><a href="../allInfo/income.html" class="navbar-a">Загальна інформація</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="uk-grid-small uk-child-width-1-1@m" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header uk-text-emphasis">
+                    <a href="../oneInfo/income.html" uk-icon="icon: arrow-left; ratio: 2"></a> |
+                    <span class="uk-text-bold uk-text-large">Додавання доходу</span>
+                </div>
+                <div class="uk-card-body">
+                    <form action="" method="POST" class="uk-text-uppercase">
+
+                        <fieldset class="uk-fieldset">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-large" for="productName">Назва продукту:</label>
+                                <input class="uk-input" id="productName" name="productName" type="text">
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-large" for="mass">Продана кількість:</label>
+                                <input class="uk-input" id="mass" name="mass" type="text">
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label uk-text-large" for="price">Сума:</label>
+                                <input class="uk-input" id="price" name="price" type="text">
+                            </div>
+
+                            <button type="submit" class="uk-button uk-button-primary uk-button-success">Додати</button>
+
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

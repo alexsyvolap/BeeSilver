@@ -4,11 +4,11 @@
     <title>Загальна інформація (Розход)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/css/uikit.min.css" />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="../assets/js/uikit.min.js"></script>
-    <script src="../assets/js/uikit-icons.min.js"></script>
+    <script src="../../assets/js/uikit.min.js"></script>
+    <script src="../../assets/js/uikit-icons.min.js"></script>
 </head>
 
 <body class="uk-text-middle">
@@ -19,23 +19,29 @@
             <div class="uk-navbar-left">
 
                 <ul class="uk-navbar-nav navbar-ul">
-                    <li class="uk-active"><a href="index.html" class="navbar-a">Пасіка</a></li>
-                    <li><a href="allInfoExpense.html" class="navbar-a">Загальна інформація</a></li>
+                    <li class="uk-active"><a href="../index.html" class="navbar-a">Пасіка</a></li>
+                    <li><a href="../allInfo/income.html" class="navbar-a">Загальна інформація</a></li>
                 </ul>
 
             </div>
         </nav>
 
+        <div class="uk-float-right uk-flex uk-position-fixed button-plus-position">
+            <a class="button-plus uk-text-large" href="../create/expenseInfo.html">
+                <i class="plus fa fa-plus"></i>
+            </a>
+        </div>
+
         <div class="uk-card uk-card-default ">
             <div class="uk-card-body uk-text-large">
                 <div class="uk-flex uk-flex-center">
                     <div class="uk-text-center border-primary-div border-width-div">
-                        <a href="allInfoIncome.html" class="uk-button uk-text-emphasis">Дохід</a>
-                        <a href="allInfoExpense.html" class="uk-button uk-button-primary button-primary border-primary-div">Витрати</a>
+                        <a href="income.html" class="uk-button uk-text-emphasis">Дохід</a>
+                        <a href="expense.html" class="uk-button uk-button-primary button-primary border-primary-div">Витрати</a>
                     </div>
                 </div>
                 <div class="uk-text-center">
-                    <span class="uk-text-big-large uk-text-bold uk-text-emphasis">Загальна витрачена сума з усіх пасік: <br>24 568 грн.</span>
+                    <span class="uk-text-big-large uk-text-bold uk-text-emphasis">Загальна витрачена сума з [%nameApiary%]: <br>7 165 грн.</span>
                 </div>
                 <div class="form uk-flex uk-flex-center">
                     <form method="GET" action="" class="uk-form-large uk-form-width-large">
@@ -58,9 +64,9 @@
                         <a href="" class="uk-button uk-button-default button-shadow">За рік</a>
                         <a href="" class="uk-button uk-button-default button-shadow">За місяць</a>
                         <a href="" class="uk-button uk-button-default button-shadow">За сьогодні</a>
-<!--                        <a href="" class="uk-button uk-button-secondary">За рік</a>-->
-<!--                        <a href="" class="uk-button uk-button-secondary">За місяць</a>-->
-<!--                        <a href="" class="uk-button uk-button-secondary">За сьогодні</a>-->
+                        <!--<a href="" class="uk-button uk-button-secondary">За рік</a>-->
+                        <!--<a href="" class="uk-button uk-button-secondary">За місяць</a>-->
+                        <!--<a href="" class="uk-button uk-button-secondary">За сьогодні</a>-->
                     </div>
                 </div>
 
@@ -73,11 +79,6 @@
                         <hr>
                     </div>
                     <div class="uk-text-center uk-text-emphasis">
-                        <span class="uk-text-bold">Купівля інструменту</span> <br>
-                        1 800 грн.
-                        <hr>
-                    </div>
-                    <div class="uk-text-center uk-text-emphasis">
                         <span class="uk-text-bold">Купівля вулика</span> <br>
                         2 700 грн.
                         <hr>
@@ -85,16 +86,6 @@
                     <div class="uk-text-center uk-text-emphasis">
                         <span class="uk-text-bold">Дав сторожу пасіки</span> <br>
                         1 500 грн.
-                        <hr>
-                    </div>
-                    <div class="uk-text-center uk-text-emphasis">
-                        <span class="uk-text-bold">Нові вулики</span> <br>
-                        10 000 грн.
-                        <hr>
-                    </div>
-                    <div class="uk-text-center uk-text-emphasis">
-                        <span class="uk-text-bold">Заправка авто</span> <br>
-                        500 грн.
                         <hr>
                     </div>
                     <div class="uk-text-center uk-text-emphasis">

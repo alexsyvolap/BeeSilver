@@ -69,6 +69,9 @@ a.text-decoration {
 .button-primary:hover {
     color: #ffffff;
 }
+.text-primary {
+    color: #0e58e5;
+}
 .button-plus {
     margin-top: 20px;
     width: 55px;

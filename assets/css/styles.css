@@ -97,6 +97,7 @@ html {
     background-image: url("../images/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 .uk-card-default {
     box-shadow: 3px 4px 5px rgba(0,0,0,0.5);

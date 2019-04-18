@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="../../assets/js/uikit.min.js"></script>
     <script src="../../assets/js/uikit-icons.min.js"></script>
+    <script src="../../assets/js/jquery-3.4.0.min.js"></script>
+    <script src="../../assets/js/custom.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
@@ -65,14 +67,16 @@
                     <div class="uk-width-large@l uk-text-emphasis">
                         <p class="item">
                             <span class="uk-margin-medium-right">
-                                <a href="#" class="fa fa-check uk-text-emphasis" aria-hidden="true"></a>
+                                <i uk-toggle="target: #modal-success" data-location="HREF_TO_DONE_EVENT" data-delete="false"
+                                   class="fa fa-check uk-text-emphasis icon-event" aria-hidden="true"></i>
                             </span>
                             <a href="../edit/event.html" class="uk-text-bold">01.06.2019</a> -
                             <span class="task">Подивитися до матки</span>
                         </p>
                         <p class="item">
                             <span class="uk-margin-medium-right">
-                                <a href="#" class="fa fa-check uk-text-emphasis" aria-hidden="true"></a>
+                                <i uk-toggle="target: #modal-success" data-location="HREF_TO_DONE_EVENT" data-delete="false"
+                                   class="fa fa-check uk-text-emphasis icon-event" aria-hidden="true"></i>
                             </span>
                             <a href="../edit/event.html" class="uk-text-bold">30.05.2019</a> -
                             <span class="task">Прибити до вулика ножку</span>
@@ -88,14 +92,16 @@
                     <div class="uk-width-large@l uk-text-emphasis">
                         <p class="item">
                             <span class="uk-margin-medium-right">
-                                <a href="#" class="fa fa-trash uk-text-emphasis" aria-hidden="true"></a>
+                                <i uk-toggle="target: #modal-delete" data-location="HREF_TO_DELETE_EVENT" data-delete="true"
+                                   class="fa fa-trash uk-text-emphasis icon-event" aria-hidden="true"></i>
                             </span>
                             <span class="uk-text-bold">01.12.2018</span> -
                             <span class="task">Покормити</span>
                         </p>
                         <p class="item">
                             <span class="uk-margin-medium-right">
-                                <a href="#" class="fa fa-trash uk-text-emphasis" aria-hidden="true"></a>
+                                <i uk-toggle="target: #modal-delete" data-location="HREF_TO_DELETE_EVENT" data-delete="true"
+                                   class="fa fa-trash uk-text-emphasis icon-event" aria-hidden="true"></i>
                             </span>
                             <span class="uk-text-bold">30.10.2019</span> -
                             <span class="task">Утеплить вулик</span>
@@ -104,6 +110,42 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div id="modal-success" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Підтвердження</h2>
+            </div>
+            <div class="uk-modal-body">
+                <p>Задача виконана?</p>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <form method="POST" action="">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Закрити</button>
+                    <button class="uk-button uk-button-success text-white" type="button">Виконана</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-delete" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Видалення</h2>
+            </div>
+            <div class="uk-modal-body">
+                <p>Видалити задачу?</p>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <form method="POST" action="">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Закрити</button>
+                    <button class="uk-button uk-button-danger button-danger text-white" type="button">Видалити</button>
+                </form>
+            </div>
         </div>
     </div>
 

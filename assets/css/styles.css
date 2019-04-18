@@ -215,3 +215,8 @@ html {
 /*
     END CHECKBOX
  */
+
+.bordered-check {
+    border: 1px solid #3bc021;
+    border-radius: 3px;
+}

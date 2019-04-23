@@ -244,17 +244,35 @@ html {
     position: absolute;
     left: 0;
     z-index: 1;
-    height: 100%;
+    height: 50%;
     background: transparent;
     width: 100%;
     border: none;
-    opacity: 0.3;
+    opacity: 0.4;
+    top: 0;
 }
-
-
 .uk-grid div{
     position: relative;
 }
 .checkbox.hidden{
     display: none;
+}
+
+.right-top {
+    right: 1rem;
+    top: .5rem;
+}
+.font-1 {
+    font-size: 1.5rem;
+}
+.opacity-none {
+    opacity: 0;
+}
+.opacity {
+    opacity: 1;
+}
+.no-button-border-back {
+    top: .4rem;
+    background: transparent;
+    border: 0;
 }

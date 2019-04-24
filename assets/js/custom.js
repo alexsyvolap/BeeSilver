@@ -17,14 +17,14 @@ $( document ).ready(function() {
     $('.add-apiary-event').click(function (e) {
         e.preventDefault();
         $('.checkbox').toggleClass('hidden');
-        if(!$(this).data('send')) {
+        if($(this).attr('data-send') == 'false') {
             $('.div-plus').find('a').removeClass('button-plus').addClass('button-send').attr('href', $(this).data('location'))
                 .find('i').removeClass('fa-plus').addClass('fa-paper-plane');
-            $(this).data('send', true);
+            $(this).attr('data-send', 'true');
         } else {
             $('.div-plus').find('a').removeClass('button-send').addClass('button-plus').attr('href', $(this).find('a').data('location'))
                 .find('i').removeClass('fa-paper-plane').addClass('fa-plus');
-            $(this).data('send', false);
+            $(this).attr('data-send', 'false');
         }
     });
 

@@ -17,14 +17,17 @@ $( document ).ready(function() {
     $('.add-apiary-event').click(function (e) {
         e.preventDefault();
         $('.checkbox').toggleClass('hidden');
-        if($(this).attr('data-send') == 'false') {
-            $('.div-plus').find('a').removeClass('button-plus').addClass('button-send').attr('href', $(this).data('location'))
+        $this = $(this);
+        send = $this.data('send');
+        if(send === false) {
+            $('.div-plus').find('a').removeClass('button-plus').addClass('button-send').attr('href', $this.data('location'))
                 .find('i').removeClass('fa-plus').addClass('fa-paper-plane');
-            $(this).attr('data-send', 'true');
+            $this.data('send', true);
         } else {
-            $('.div-plus').find('a').removeClass('button-send').addClass('button-plus').attr('href', $(this).find('a').data('location'))
+            $div = $('.div-plus');
+            $div.find('a').removeClass('button-send').addClass('button-plus').attr('href', $div.find('a').data('location'))
                 .find('i').removeClass('fa-paper-plane').addClass('fa-plus');
-            $(this).attr('data-send', 'false');
+            $this.data('send', false);
         }
     });
 
